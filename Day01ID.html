@@ -1,0 +1,147 @@
+<!-- Just testing in HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>ID CARd</title>
+</head>
+<body>
+    
+<script>
+
+let name = "Prashant";
+let age = 21;
+let city = "Texas";
+let birthYear = 2026- age;
+
+console.log("===Profile Card===");
+console.log("Name:", name);
+console.log("Age:", age);
+console.log("City:", city); 
+console.log("Birth Year:", birthYear);
+
+</script>
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> ID CARD</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .card {
+    width: 300px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+  }
+
+  .top-bar {
+    height: 8px;
+    background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  }
+
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .avatar {  a
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4f46e5;
+    margin-top: 10px;
+  }
+
+  h2 {
+    margin: 10px 0 5px;
+  }
+
+  .info {
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .info p {
+    margin: 6px 0;
+    font-size: 14px;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #4f46e5;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background: #3730a3;
+  } 
+
+    </style>
+
+</head>
+<body>
+
+    <div id = "card"></div>
+
+    <script>
+    
+    let name = "Prashant";
+    let age = 21;
+    let city = "Texas";
+    let birthYear = 2026 - age;
+
+    document.getElementById("card").innerHTML = `
+    <div class = "card">
+        <div class = "top-bar"></div>
+        <div class= "content">
+        <img class = "avatar" src ="https://i.pravatar.cc/150?img=12" />
+
+        <h2>${name}</h2>
+
+        <div class = "info">
+            <p><b>Age:</b> ${age}</p>
+            <p><b>Age:${age}</b></p>
+            <p><b>City: ${city}</b></p>
+            <p><b>Birth Year:</b> ${birthYear}</p>
+        
+        <button onclick="alert('${name} | ${age} | ${city}')">
+        Show Profile
+      </button>
+
+    </div>
+
+  </div>
+`;
+
+</script>
+</body>
+</html>

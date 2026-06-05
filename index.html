@@ -1,0 +1,29 @@
+# just changing the contents in the webpage
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+    function myfunction(){
+        document.getElementById("demo").innerHTML = "Paragraph changed";
+
+    }
+    function myfunction2(){
+        document.getElementById("shot").innerHTML = "Shot the shit";
+    }
+</script>
+<script src="scripts.js"></script>
+</head>
+<body>
+<h2>Demo JavaScript in Head</h2>
+<p id="demo">A paragraph</p>
+<p1 id ="shot">A shot </p1>
+<p id="demo1">Hello World</p>
+
+<script>
+document.getElementById("demo1").innerHTML = "demo1";
+</script>
+
+<button type="button" onclick="myfunction3()">Try it</button>
+<button type="button" onclick="myfunction2()">Shot Now</button>    
+</body>
+</html> 

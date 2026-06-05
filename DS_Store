@@ -1,0 +1,4 @@
+mode_modules
+nano .gitignore
+.DS_Store
+node_modules
